@@ -100,3 +100,58 @@ button:hover {
         font-size: 1.2em;
     }
 }
+/* Skrytí checkboxu */
+.menu-checkbox {
+    display: none;
+}
+
+/* Hamburger ikona */
+.hamburger {
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+}
+
+.hamburger .bar {
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Navigační menu */
+.nav-menu {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Skryté mimo obrazovku */
+    height: 100%;
+    width: 250px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.4s ease;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 15px 0;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #4CAF50;
+}
+
+/* Zobrazení menu, když je checkbox zaškrtnutý */
+.menu-checkbox:checked ~ .nav-menu {
+    right: 0;
+}
