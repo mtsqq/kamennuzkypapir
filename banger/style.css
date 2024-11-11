@@ -69,3 +69,34 @@ button:hover {
 .draw {
     color: #FFD700;
 }
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    header p {
+        font-size: 1em;
+    }
+    button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+    #result {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    header p {
+        font-size: 0.9em;
+    }
+    button {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+    #result {
+        font-size: 1.2em;
+    }
+}
